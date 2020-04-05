@@ -93,7 +93,7 @@ if (empty($array) && empty($a)){
 <td>Valor do Produto</td>
 <td>Qtda</td>
 <td>ID</td>
-<td>AÃ§Ã£o</td>
+<td>Ação</td>
 </tr>
 <?php
 if (!empty($array)){
@@ -103,12 +103,12 @@ foreach ($array as $list => $valores){
 <td><?=$valores["nome"] ?></td>
 <td><?=$valores["marca"] ?></td>
 <td><?=$valores["CodBarra"] ?></td>
-<td><?=$valores["Codigo"] ?></td>
+<td><?=$valores["codigo"] ?></td>
 <td><?=$valores["ValorDesconto"] ?></td>
 <td><?=$valores["ValorProduto"] ?></td>
 <td><?=$valores["qtda"] ?></td>
 <td><?=$valores["id"] ?></td>
-<td><a href="ListaProduto.php?acao=exc&id=<?=$valores["id"]; ?>"> Remover </a>
+<td><a href="ListaProduto.php?acao=exc&id=<?=$valores["id"]; ?>"> Remover </a> | 
 <a href="ListaProduto.php?acao=alt&id=<?=$valores["id"]; ?>"> Alterar </a></td>
 </tr>
 
